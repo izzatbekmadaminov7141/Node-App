@@ -1,5 +1,6 @@
 const http = require("http");
 const fs = require("fs");
+const multe = require("./math");
 const server = http.createServer((req, res) => {
   //   console.log(req.url);
   //   console.log(req.method);
@@ -43,3 +44,5 @@ const POST = process.env.POST || 3000;
 server.listen(POST, () => {
   console.log("listening on");
 });
+
+console.log(multe(2, 5));
